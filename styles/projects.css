@@ -1,0 +1,23 @@
+.main-projects {
+  -moz-column-gap: 7.4rem;
+       column-gap: 7.4rem;
+  row-gap: 7.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.links .link {
+  color: var(--color-darker-blue);
+  text-decoration: underline;
+}
+
+.img-projects {
+  max-width: 100%;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+}/*# sourceMappingURL=projects.css.map */

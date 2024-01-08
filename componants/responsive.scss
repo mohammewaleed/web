@@ -1,0 +1,94 @@
+@media (max-width: 1000px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    row-gap: 8rem;
+  }
+
+  .section {
+    grid-template-columns: 1fr;
+  }
+
+  .media {
+    max-width: 100%;
+  }
+
+  .bio_image {
+    grid-row: 1;
+    justify-self: center;
+    margin-bottom: 4rem;
+  }
+
+  .skills__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-projects {
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
+    justify-items: center;
+  }
+
+  .text:nth-of-type(2) {
+    order: 1;
+  }
+
+  .says {
+    font-size: var(--font-size-24);
+  }
+
+  .send {
+    order: -1;
+  }
+  .con {
+    row-gap: 6rem;
+  }
+}
+
+/* Mobail */
+@media (max-width: 500px) {
+  /* 🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕 */
+  .burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.75rem;
+  }
+  .bar {
+    width: 4.375rem;
+    height: 0.3rem;
+    background-color: var(--color-text);
+    transition: var(--transition-timing);
+  }
+  .header:has(.burger_check:checked) .bar:nth-child(1) {
+    transform: translateY(10px) rotate(40deg);
+  }
+  .header:has(.burger_check:checked) .bar:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .header:has(.burger_check:checked) .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-40deg);
+  }
+
+  .burger_check:checked + .navigation {
+    top: 100%;
+  }
+  .container .navigation {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-background);
+    width: 100vw;
+    top: 0;
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--color-text);
+    z-index: -2;
+    transition: var(--transition-timing);
+  }
+  /* 🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕 */
+}

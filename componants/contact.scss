@@ -1,0 +1,69 @@
+.con {
+  column-gap: 20rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.description {
+  line-height: 1.9;
+  font-size: var(--font-size-20);
+}
+
+.example_email {
+  text-decoration: underline;
+  font-weight: var(--font-weight-bold);
+  margin: 2.5rem 0;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.fa-brands {
+  font-size: 25px;
+  color: var(--color-icons);
+}
+
+.Socila {
+  transition: var(--transition-timing);
+}
+
+.Socila:hover {
+  transform: scale(1.2);
+}
+
+.formdata {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+input[type="text"],
+input[type="tel"] {
+  flex: 1;
+  background-color: transparent;
+  border-bottom: 0.1rem solid var(--color-text);
+  color: var(--color-text);
+}
+
+textarea {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border-bottom: 0.1rem solid var(--color-text);
+  margin-bottom: 3.4rem;
+  color: var(--color-text);
+}
+.sub {
+  background-color: var(--color-link-bg);
+  padding: 1.7rem 1.8rem;
+  color: var(--color-white);
+  text-align: center;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-24);
+}
+
+.con form:invalid::after {
+  content: "*";
+  font-size: var(--font-size-38);
+  color: var(--color-red);
+}

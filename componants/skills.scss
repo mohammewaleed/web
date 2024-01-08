@@ -1,0 +1,19 @@
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 5rem;
+}
+.skills__list .skills__title__content .Head__li {
+  font-size: var(--font-size-38);
+  font-weight: var(--font-weight-semi-bold);
+}
+.skills__list .skills__title__content .description {
+  color: var(--color-black);
+  font-size: var(--font-size-20);
+  margin-block-start: 1rem;
+  transition: 0.3s;
+}
+
+.skills__list .skills__title__content .description:hover {
+  text-shadow: 0 0 2px var(--color-green);
+}

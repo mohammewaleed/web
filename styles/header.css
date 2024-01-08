@@ -1,0 +1,128 @@
+@charset "UTF-8";
+.container {
+  display: grid;
+  row-gap: 11rem;
+  margin: 0 auto;
+  max-width: calc(var(--container-width) + var(--gutter) * 2);
+  padding-inline: var(--gutter);
+}
+
+.video-loop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.08;
+  z-index: -99999;
+}
+
+.container .header {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  top: 0px;
+  z-index: 99999;
+}
+
+.container .header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  border-bottom: 0.1rem solid var(--color-input-border);
+  background-color: var(--color-background);
+  z-index: -1;
+}
+
+.navigation .fa-bars {
+  display: none;
+}
+
+.container .navigation .navigation__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.fa-bars {
+  display: none;
+}
+
+.burger_check {
+  display: none;
+}
+
+.container .navigation .navigation__list li:hover .navigation__links {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.switch {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+/* 🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕 */
+.container:has(.bio:target) .navigation_bio,
+.container:has(.skills:target) .navigation_skills,
+.container:has(#Media:target) .navigation_Media,
+.container:has(#projects:target) .navigation_projects,
+.container:has(#clints:target) .navigation_clints,
+.container:has(#contact:target) .navigation_contact {
+  color: var(--color-blue);
+  text-decoration: underline;
+  font-weight: var(--font-weight-bold);
+  transition: 0.3s;
+}
+
+/* 🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕 */
+/* start switch */
+/* 🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕 */
+.switch__checkbox {
+  display: none;
+}
+
+.switch__title {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-18);
+}
+
+.switch__checkbox:checked + .switch__lable {
+  /* transform: translateX(20px); */
+  /* background-color: var(--color-green); */
+  background-color: var(--color-white);
+}
+
+.switch__checkbox:checked + .switch__lable::after {
+  transform: translateX(2.1rem);
+  background-color: var(--color-green);
+}
+
+.switch__lable {
+  position: relative;
+  width: 4.5rem;
+  height: 2.2rem;
+  border-radius: 1.5rem;
+  background-color: var(--color-black);
+  padding: 0.3rem 0.4rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.switch__lable::after {
+  content: " ";
+  position: absolute;
+  background-color: var(--color-white);
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+/* 🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕 */
+/* End switch */
+/* End Header *//*# sourceMappingURL=header.css.map */

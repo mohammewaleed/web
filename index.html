@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- You should add to be resbonsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My profile site</title>
+    <!-- main css file -->
+    <link rel="stylesheet" href="../styles//style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesom file -->
+    <link rel="stylesheet" href="../Css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <video class="video-loop" autoplay loop muted>
+        <source src="../img/video-loop.mp4" type="video/mp4" />
+      </video>
+      <!-- Start Header  -->
+      <header class="header">
+        <label for="menu" class="burger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+        <input type="checkbox" id="menu" class="burger_check" />
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li>
+              <a class="navigation__links navigation_bio" href="#bio">Bio</a>
+            </li>
+            <li>
+              <a class="navigation__links navigation_skills" href="#skills"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a class="navigation__links navigation_Media" href="#Media"
+                >Media</a
+              >
+            </li>
+            <li>
+              <a class="navigation__links navigation_projects" href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a class="navigation__links navigation_clints" href="#clints"
+                >My clients</a
+              >
+            </li>
+            <li>
+              <a class="navigation__links navigation_contact" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="switch">
+          <h3 class="switch__title">Switch Theme</h3>
+          <input
+            type="checkbox"
+            class="switch__checkbox"
+            name="Switch"
+            id="Switch"
+          />
+          <label for="Switch" class="switch__lable"></label>
+        </div>
+      </header>
+      <!-- End Header  -->
+
+      <!-- Start Bio  -->
+      <section id="bio" class="section bio">
+        <div class="bio__text">
+          <h2 class="bio__title">
+            Hi There, I’M A Passionate Software Engineer
+          </h2>
+          <p class="bio__description">
+            My name is <span class="author">Mohamed Abusrea</span>, a co-founder
+            of
+            <a href="https://www.almdrasa.com/" class="almdrasa_link name"
+              >Almdrasa.com</a
+            >, Software Engineer and a content creator who publish content on
+            <a href="https://www.facebook.com/" class="facebook_link name"
+              >Facebook</a
+            >,
+            <a
+              href="https://twitter.com/mohamed_abusrea"
+              class="Twitter_link name"
+              >Twitter</a
+            >,
+            <a
+              href="https://www.linkedin.com/in/mohamedabusrea/"
+              class="LinkedIn_link name"
+              >LinkedIn</a
+            >
+            and
+            <a
+              href="https://www.youtube.com/@MohamedAbusrea"
+              class="Youtube_link name"
+              >Youtube</a
+            >.
+          </p>
+          <div class="buttons">
+            <a href="#contact" class="Say link"> Say Hi </a>
+            <a href="#" class="Cv link"
+              >Download CV
+              <i class="fa-solid fa-arrow-down arrow"></i>
+            </a>
+          </div>
+        </div>
+        <div class="bio_image">
+          <img class="pic" src="../img/personal-pic.png" alt="personal_image" />
+        </div>
+      </section>
+      <!-- End Bio  -->
+      <!--Start skills  -->
+      <section id="skills" class="skills section section--with-bg">
+        <h2 class="h2_heading">Skills</h2>
+
+        <ul class="skills__list">
+          <li class="skills__title__content">
+            <h2 class="Head__li">HTML</h2>
+            <p class="description">8 years</p>
+          </li>
+          <li class="skills__title__content">
+            <h2 class="Head__li">CSS</h2>
+            <p class="description">8 years</p>
+          </li>
+          <li class="skills__title__content">
+            <h2 class="Head__li">Javascript</h2>
+            <p class="description">8 years</p>
+          </li>
+          <li class="skills__title__content">
+            <h2 class="Head__li">React</h2>
+            <p class="description">4 years</p>
+          </li>
+          <li class="skills__title__content">
+            <h2 class="Head__li">Redux</h2>
+            <p class="description">3 years</p>
+          </li>
+          <li class="skills__title__content">
+            <h2 class="Head__li">React teasting library</h2>
+            <p class="description">1 years</p>
+          </li>
+        </ul>
+      </section>
+      <!-- End skills -->
+      <!-- Start Media -->
+      <section id="Media" class="section media">
+        <video class="media__video" poster="../img/thumbnail.jpg" controls>
+          <source src="../img/video.mp4" type="video/mp4" />
+          <source src="../img/video.mp4" type="video/ogg" />
+          this broweser doesn't suppor it
+        </video>
+      </section>
+      <!-- End Media -->
+
+      <!-- Start My projects -->
+      <section id="projects" class="section">
+        <h2 class="h2_heading one-colum">
+          MY FEATURED <br />
+          PROJECTS
+        </h2>
+        <div class="main-projects">
+          <img
+            class="img-projects"
+            src="../img/project-1.jpg"
+            alt="quran_tap_extention"
+          />
+          <div class="text">
+            <h2 class="heading2">Quran Tab Extension</h2>
+            <p class="description">
+              Quran Tab is an Islamic new tab page that will keep you inspired
+              by a verse from the Quran every time you open a new tab that helps
+              you achieve your "Khatma" and keeps you connected with the words
+              of Allah.
+            </p>
+            <div class="links">
+              <a
+                href="https://chromewebstore.google.com/detail/quran-tab/afaihcdgkjebgabomemccdneglknjkdd"
+                target="_blank"
+                class="chromelink link"
+                >Chrome Link</a
+              >
+              <a
+                href="https://microsoftedge.microsoft.com/addons/detail/quran-tab/hnfepfakgcalolgicjdfmaaellnondji"
+                target="_blank"
+                class="edgelink link"
+                >Edge Link</a
+              >
+            </div>
+          </div>
+          <div class="text">
+            <h2 class="heading2">Quran Station Extension</h2>
+            <p class="description">
+              Quran Tab is an Islamic new tab page that will keep you inspired
+              by a verse from the Quran every time you open a new tab that helps
+              you achieve your "Khatma" and keeps you connected with the words
+              of Allah.
+            </p>
+            <div class="links">
+              <a
+                href="https://chromewebstore.google.com/detail/quran-tab/afaihcdgkjebgabomemccdneglknjkdd"
+                target="_blank"
+                class="chromelink link"
+                >Chrome Link</a
+              >
+              <a
+                href="https://microsoftedge.microsoft.com/addons/detail/quran-tab/hnfepfakgcalolgicjdfmaaellnondji"
+                target="_blank"
+                class="edgelink link"
+                >Edge Link</a
+              >
+              <a
+                href="https://addons.mozilla.org/en-US/firefox/addon/quran-station/"
+                class="firefox link"
+                target="_blank"
+                >Firefox Link</a
+              >
+            </div>
+          </div>
+          <img
+            class="img-projects"
+            src="../img/project-2.jpg"
+            alt="quran_tap_extention"
+          />
+        </div>
+      </section>
+      <!-- End My projects -->
+
+      <!-- Start Clients -->
+      <section id="clints" class="section section--with-bg">
+        <h2 class="h2_heading">
+          WHAT MY <br />
+          CLIENTS SAYS.
+        </h2>
+        <div class="slide">
+          <div class="clints_warrper">
+            <p class="says">
+              Abusrea has the advantageous ability to understand a problem and
+              implement code to a high standard within the deadline. Each
+              project we have worked on, I know I can completely trust Abusrea
+              to own his tasks and complete what is needed when asked of him.
+            </p>
+            <p class="says">
+              Mohamed will patiently listen to you and give you his own Ideas as
+              well, and in the end, he comes up with something completely
+              different from what you’re expecting, but the good news is, you’ll
+              always love it.
+            </p>
+            <p class="says">
+              I had a chance to work closely with Mohamed as a direct manager
+              from hist first day at DeliveryHero until my last day there
+              (6+months). Mohamed's biggest strengths that I admire are taking
+              initiatives on personal and team level, and driving them.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- End Clients -->
+      <!-- Start contact us -->
+      <section id="contact" class="section con">
+        <div class="contact__details">
+          <p class="description">
+            Feel free to reach out to me any time. I prefer to talk over email,
+            especially since we may be a few time zones away.
+          </p>
+          <a href="mailto: example@gmail.com" class="example_email"
+            >example@gmail.com</a
+          >
+          <div class="icons">
+            <a class="Socila" href="https://www.facebook.com"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a class="Socila" href="https://twitter.com/mohamed_abusrea"
+              ><i class="fa-brands fa-x-twitter"> </i
+            ></a>
+
+            <a href="#bio" class="Socila"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="#bio" class="Socila"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="#bio" class="Socila"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a class="Socila" href="https://www.linkedin.com/in/mohamedabusrea/"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+        <form action="" class="send">
+          <h2 class="h2_heading">
+            LET’S WORK
+            <br />
+            TOGETHER!
+          </h2>
+          <div class="formdata">
+            <input
+              type="text"
+              name="username"
+              required
+              placeholder="Full Name"
+            />
+            <input
+              type="tel"
+              name="Phone"
+              required
+              placeholder="Phone No."
+              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            />
+            <!-- new info🆕🆕🆕🆕🆕🆕 -->
+          </div>
+          <textarea name="Message" placeholder="Your Massage"></textarea>
+          <input
+            type="submit"
+            name="Send Message"
+            value="Send Message"
+            class="sub"
+          />
+        </form>
+      </section>
+      <!-- End contact us -->
+      <footer class="footer section">
+        <p class="descrip">&copy; 2022 by Mohamed Abusrea</p>
+      </footer>
+    </div>
+  </body>
+</html>
